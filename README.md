@@ -1,9 +1,14 @@
-### .NET Container Example ###
+# .NET Development in a Container #
 
-Root-level Dockerfile is for VS Code Development Container.
+I like the idea of developing in .NET without having to install stuff on my actual laptop.  If you're a .NET Developer, you probably feel the same way.  This repo aims to showcase how somebody could do that by leveraging VS Code's Remote Development extension, a top-level Dockerfile for your workstation, and some powershell magic to get remote container development to work smoothly.
+
+## Anatomy ##
+* *automation*, which contains, scripts for you to run when you want to initialize a new project.
+* *Dockerfile*, this is your "workstation Dockerfile", where you will use VS Code's Containers Remote Development functionality to bootstrap a brand new .net 5 workstation without installing anything new on your physical machine.
+* *project folders*, all of your projects should be placed in folders at the root of this repo, as siblings to the testapi project this repo is initialized with.
 
 `testapi` is an example of a webapi project with automation written for remote debugging into the webapi container.
-SSH and VSDBG must be configured in order to allow for the "remote debugging" capabilities to work on a linux container.  The scripts in the automation folders take care of that for you.
+SSH and VSDBG must be configured in order to allow for the "remote debugging" capabilities to work on a linux container.  Thankfully, all of the powershell in this repo handles that for you. :)
 
 More info here: https://github.com/OmniSharp/omnisharp-vscode/wiki/Attaching-to-remote-processes
 
