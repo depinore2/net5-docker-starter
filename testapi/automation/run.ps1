@@ -8,7 +8,7 @@ if($lastExitCode -eq 0) {
 
 ############# CHANGE THE FOLLOWING LINE TO CHANGE HOW YOUR CONTAINER IS RUN #############
 
-docker run -p 80:80 --name $projname -d $projname;
+docker run --name $projname -d $projname.ToLower();
 
 #########################################################################################
 
