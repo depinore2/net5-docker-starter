@@ -54,4 +54,8 @@ Make sure you already started your container, select the appropriate debug profi
 
 For more information on how remote debugging works with Omnisharp, refer to this: https://github.com/OmniSharp/omnisharp-vscode/wiki/Attaching-to-remote-processes
 
-To see how this particular solution implements the above documentation, refer to 
+To see how this particular solution implements the above documentation, refer to the automation/Dockerfile_debug file in your project.
+
+### Resetting Your Automation ###
+
+I encourage you to make modifications to any of the files in your project-level automation folder.  If at any point you feel like you screwed something up, you can reset the entire automation folder by re-running `./automation/initproject.ps1` from the top-level of this repo.
