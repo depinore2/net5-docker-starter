@@ -1,6 +1,6 @@
 # .NET Development in a Container #
 
-I like the idea of developing in .NET without having to install stuff on my actual laptop.  If you're a .NET Developer, you probably feel the same way.  This repo aims to showcase how somebody could do that by leveraging VS Code's Remote Development extension, a top-level Dockerfile for your workstation, and some powershell magic to get remote container development to work smoothly.
+I like the idea of developing in .NET without having to install stuff on my actual laptop.  If you're a .NET Developer, you probably feel the same way.  This repo aims to showcase how somebody could do that by leveraging VS Code's Remote Development extension, a top-level Dockerfile for your workstation, and some powershell magic to get remote container debugging to work smoothly.
 
 ## Anatomy ##
 * *automation*, which contains, scripts for you to run when you want to initialize a new project.
