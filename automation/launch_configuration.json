@@ -1,0 +1,16 @@
+{
+    "name": "{{PROJECTNAME}} Attach",
+    "type": "coreclr",
+    "request": "attach",
+    "processId": "${command:pickRemoteProcess}",
+    "pipeTransport": {
+        "pipeProgram": "ssh",
+        "pipeArgs": ["-T", "root@12.34.56.78", "-i", "{{PROJECTNAME}}/_ssh/debug"],
+        "debuggerPath": "/app/vsdbg/vsdbg",
+        "pipeCwd": "${workspaceRoot}",
+        "quoteArgs": true
+    },
+    "sourceFileMap": {
+        "/app/api/{{PROJECTNAME}}": "${workspaceRoot}"
+    }
+}
